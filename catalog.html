@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>HTML Academy: Глейси каталог</title>
   </head>
   <body>
   <header class="header">
@@ -13,7 +13,7 @@
       <nav class="navigation">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link" href="#">Каталог</a>
+            <span class="nav-active">Каталог</span>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Доставка и оплата</a>
@@ -34,6 +34,7 @@
           <span>Вход</span>
         </a>
       </div>
+      <!-- Я так понимаю в макете просто hover свойство показано -->
       <div class="cart">
         <a href="#">
           <div class="cart-icon"></div>
@@ -47,154 +48,146 @@
     </div>
   </header>
   <main>
-    <div class="slider">
-      <div class="slide">
-        <!-- Незнаю как здесь с картинкой быть, наверно стоит сделать отдельным тегом с привызкой css св-ва. Или лучше img? -->
-        <p>
-          Крем-брюле и пломбир
-          с малиновым джемом
-        </p>
-        <a class="btn" href="#">Давайте оба!</a>
-      </div>
-      <div class="slide">
-        <!-- Незнаю как здесь с картинкой быть, наверно стоит сделать отдельным тегом с привызкой css св-ва. Или лучше img? -->
-        <p>
-          Крем-брюле и пломбир
-          с малиновым джемом
-        </p>
-        <a class="btn" href="#">Давайте оба!</a>
-      </div>
-      <div class="slide">
-        <!-- Незнаю как здесь с картинкой быть, наверно стоит сделать отдельным тегом с привызкой css св-ва. Или лучше img? -->
-        <p>
-          Крем-брюле и пломбир
-          с малиновым джемом
-        </p>
-        <a class="btn" href="#">Давайте оба!</a>
-      </div>
+    <ul class="breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+      <li><span>Сливочное</span></li>
+    </ul>
+    <h1>Сливочное мороженное</h1>
+    <article class="filter">
+      <form>
+        <label class="title" for="sorting">Сортировка</label>
+        <select name="sorting" id="sorting">
+          <option value="">по популярности</option>
+          <option value="">по цене</option>
+        </select>
+        <label class="title" for="sorting">Цена: 100 руб. - 500 руб.</label>
+        <!-- Незнаю как заверстать этот элемент -->
+        <label class="title">Жирность:</label>
+        <div class="block">
+          <label><input type="radio" name="fatness" checked="checked"> 0%</label>
+          <label><input type="radio" name="fatness"> до 10%</label>
+          <label><input type="radio" name="fatness"> до 30%</label>
+          <label><input type="radio" name="fatness"> свыше 30%</label>
+        </div>
+        <label class="title">Наполнители:</label>
+        <div class="block">
+          <label><input type="checkbox" checked="checked"> шоколадные</label>
+          <label><input type="checkbox" checked="checked"> сахарные присыпки</label>
+          <label><input type="checkbox"> фрукты</label>
+          <label><input type="checkbox"> сиропы</label>
+          <label><input type="checkbox"> джемы</label>
+        </div>
+        <button class="btn" type="submit">Применить</button>
+      </form>
+    </article>
+    <div class="products">
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
+      <section class="product-item">
+        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
+        <div class="image"></div>
+        <div class="price">310 Р/кг</div>
+        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
+        <a href="#" class="btn">Быстрый просмотр</a>
+      </section>
     </div>
-    <!-- Есть также вопрос по кружочкам слайдера. Так правильно? -->
-    <div class="slider-navigation">
-      <div class="active"></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div class="index-content">
-      <div class="stock">
-        <div class="frame">
-          <div class="title">Малинка даром!</div>
-          <p>
-            При покупке 2 кг ...
-          </p>
-          <a class="btn" href="#">Хочу варенье!</a>
-        </div>
-        <div class="frame">
-          <div class="title">Шоколадки даром!</div>
-          <p>
-            При покупке 2 кг ...
-          </p>
-          <a class="btn" href="#">Хочу шоколадки!</a>
-        </div>
-      </div>
-      <div class="hits-block">
-        <section class="product-item">
-          <div class="hit"></div>
-          <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-          <div class="image"></div>
-          <div class="price">310 Р/кг</div>
-          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </section>
-        <section class="product-item">
-          <div class="hit"></div>
-          <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-          <div class="image"></div>
-          <div class="price">310 Р/кг</div>
-          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </section>
-        <section class="product-item">
-          <div class="hit"></div>
-          <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-          <div class="image"></div>
-          <div class="price">310 Р/кг</div>
-          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </section>
-        <section class="product-item">
-          <div class="hit"></div>
-          <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-          <div class="image"></div>
-          <div class="price">310 Р/кг</div>
-          <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </section>
-      </div>
-      <article class="advertising">
-        <div class="title">Магазин Глейси - это ...</div>
-        <div class="advantage">
-          <div class="icecream-icon"></div>
-          <p>
-            Все наше мороженное ...
-          </p>
-        </div>
-        <div class="advantage">
-          <div class="sheet-icon"></div>
-          <p>
-            Для приготовления мороженного ...
-          </p>
-        </div>
-        <div class="advantage">
-          <div class="farm-icon"></div>
-          <p>
-            Закупка ингридиентов производится ...
-          </p>
-        </div>
-        <div class="advantage">
-          <div class="thermometer-icon"></div>
-          <p>
-            доставка нашего мороженного ...
-          </p>
-        </div>
-      </article>
-      <!-- Незнаю как лучше назвать этот блог -->
-      <div class="other">
-        <div class="frame">
-          <p>Новое в нашем блоге</p>
-          <a href="#">
-            10 способов сервировки
-            фруктовых щербетов
-            к столу
-          </a>
-        </div>
-        <div class="frame">
-          <div class="substrate">
-            <p>Подпишись ...</p>
-            <form>
-              <input type="text" placeholder="Электронная почта" name="email">
-              <button class="btn" type="submit">Отправить</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="map"></div>
-      <div class="map-description">
-        <p>
-          Адрес главного офиса и
-          офлайн магазина:
-        </p>
-        <p class="bold">
-          ул. Большая Конюшенная
-          19/8, Санкт-Перербург
-        </p>
-        <p>
-          Для заказов по телефону:
-        </p>
-        <p class="bold">
-          8 812 450-25-25
-        </p>
-        <p>
-          (с 10 до 20 ежедневно)
-        </p>
-        <a class="btn" href="#">Форма обратной связи</a>
-      </div>
-    </div>
+    <ul class="pagination">
+      <li><span class="prev"></span></li>
+      <li><span>1</span></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">6</a></li>
+      <li><span class="next"></span></li>
+    </ul>
   </main>
   <footer>
     <div class="social-networks">
