@@ -24,23 +24,23 @@
           </li>
         </ul>
       </nav>
-      <div class="search">
-        <a href="#">
-          <div class="magnifier-icon"></div>
-        </a>
+      <a class="search" href="#">Найти</a>
+      <div class="search-box">
+        <form>
+          <input type="text" name="search" placeholder="Что ищем?">
+        </form>
       </div>
-      <div class="user-block">
-        <a href="#">
-          <div class="sing-in-icon"></div>
-          <span>Вход</span>
-        </a>
+      <a class="sing-in" href="#">Вход</a>
+      <div class="sing-in-box">
+        <form>
+          <input type="text" name="email" placeholder="Электронная почта">
+          <input type="password" name="password" placeholder="Пароль">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+          <button class="btn" type="submit">Войти</button>
+        </form>
       </div>
-      <div class="cart">
-        <a href="#">
-          <div class="cart-icon"></div>
-          <span>Пусто</span>
-        </a>
-      </div>
+      <a class="cart" href="#">Пусто</a>
     </div>
     <div class="contacts">
       <div class="time">С 10 до 20, ежедневно</div>
@@ -49,24 +49,21 @@
   </header>
   <main>
     <div class="slider">
-      <div class="slide">
-        <!-- Незнаю как здесь с картинкой быть, наверно стоит сделать отдельным тегом с привызкой css св-ва. Или лучше img? -->
+      <div class="slide icecream-1">
         <p>
           Крем-брюле и пломбир
           с малиновым джемом
         </p>
         <a class="btn" href="#">Давайте оба!</a>
       </div>
-      <div class="slide">
-        <!-- Незнаю как здесь с картинкой быть, наверно стоит сделать отдельным тегом с привызкой css св-ва. Или лучше img? -->
+      <div class="slide icecream-2">
         <p>
           Крем-брюле и пломбир
           с малиновым джемом
         </p>
         <a class="btn" href="#">Давайте оба!</a>
       </div>
-      <div class="slide">
-        <!-- Незнаю как здесь с картинкой быть, наверно стоит сделать отдельным тегом с привызкой css св-ва. Или лучше img? -->
+      <div class="slide icecream-3">
         <p>
           Крем-брюле и пломбир
           с малиновым джемом
@@ -100,29 +97,25 @@
       <div class="hits-block">
         <section class="product-item">
           <div class="hit"></div>
-          <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-          <div class="image"></div>
+          <div class="image hit-icecream-1"></div>
           <div class="price">310 Р/кг</div>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </section>
         <section class="product-item">
           <div class="hit"></div>
-          <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-          <div class="image"></div>
+          <div class="image hit-icecream-1"></div>
           <div class="price">310 Р/кг</div>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </section>
         <section class="product-item">
           <div class="hit"></div>
-          <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-          <div class="image"></div>
+          <div class="image hit-icecream-1"></div>
           <div class="price">310 Р/кг</div>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </section>
         <section class="product-item">
           <div class="hit"></div>
-          <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-          <div class="image"></div>
+          <div class="image hit-icecream-1"></div>
           <div class="price">310 Р/кг</div>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </section>
@@ -154,8 +147,7 @@
           </p>
         </div>
       </article>
-      <!-- Незнаю как лучше назвать этот блог -->
-      <div class="other">
+      <div class="other-info">
         <div class="frame">
           <p>Новое в нашем блоге</p>
           <a href="#">
@@ -199,10 +191,10 @@
   </main>
   <footer>
     <div class="social-networks">
-      <a href="#"><div class="tw"></div></a>
-      <a href="#"><div class="ins"></div></a>
-      <a href="#"><div class="fb"></div></a>
-      <a href="#"><div class="vk"></div></a>
+      <a class="tw" href="#"></a>
+      <a class="ins" href="#"></a>
+      <a class="fb" href="#"></a>
+      <a class="vk" href="#"></a>
     </div>
     <div class="footer_links">
       <div class="bold"><div class="heart-icon"></div><a href="#">Для поставщиков</a></div>

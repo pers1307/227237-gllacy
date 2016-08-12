@@ -24,24 +24,23 @@
           </li>
         </ul>
       </nav>
-      <div class="search">
-        <a href="#">
-          <div class="magnifier-icon"></div>
-        </a>
+      <a class="search" href="#">Найти</a>
+      <div class="search-box">
+        <form>
+          <input type="text" name="search" placeholder="Что ищем?">
+        </form>
       </div>
-      <div class="user-block">
-        <a href="#">
-          <div class="sing-in-icon"></div>
-          <span>Вход</span>
-        </a>
+      <a class="sing-in" href="#">Вход</a>
+      <div class="sing-in-box">
+        <form>
+          <input type="text" name="email" placeholder="Электронная почта">
+          <input type="password" name="password" placeholder="Пароль">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+          <button class="btn" type="submit">Войти</button>
+        </form>
       </div>
-      <!-- Я так понимаю в макете просто hover свойство показано -->
-      <div class="cart">
-        <a href="#">
-          <div class="cart-icon"></div>
-          <span>Пусто</span>
-        </a>
-      </div>
+      <a class="cart" href="#">Пусто</a>
       <div class="cart-block">
         <div class="position">
           <a class="delete" href="#"></a>
@@ -83,12 +82,18 @@
     <article class="filter">
       <form>
         <label class="title" for="sorting">Сортировка</label>
-        <select name="sorting" id="sorting">
-          <option value="">по популярности</option>
-          <option value="">по цене</option>
-        </select>
+        <div class="block">
+          <select name="sorting" id="sorting">
+            <option value="">по популярности</option>
+            <option value="">сначала недорогие</option>
+            <option value="">сначала дорогие</option>
+            <option value="">по жирности</option>
+          </select>
+        </div>
         <label class="title" for="sorting">Цена: 100 руб. - 500 руб.</label>
-        <!-- Незнаю как заверстать этот элемент -->
+        <div class="block">
+          <input type="range">
+        </div>
         <label class="title">Жирность:</label>
         <div class="block">
           <label><input type="radio" name="fatness" checked="checked"> 0%</label>
@@ -109,99 +114,75 @@
     </article>
     <div class="products">
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-1"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-2"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-3"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-4"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-5"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-6"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-7"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-8"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-9"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-10"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-11"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
       <section class="product-item">
-        <!-- Здесь я думаю будет оптимальней вставить картинку через css-->
-        <div class="image"></div>
+        <div class="image icecream-item-12"></div>
         <div class="price">310 Р/кг</div>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        <!-- Незнаю как сделать правильно этот элемент при наведении, подскажи плж -->
         <a href="#" class="btn">Быстрый просмотр</a>
       </section>
     </div>
@@ -217,10 +198,10 @@
   </main>
   <footer>
     <div class="social-networks">
-      <a href="#"><div class="tw"></div></a>
-      <a href="#"><div class="ins"></div></a>
-      <a href="#"><div class="fb"></div></a>
-      <a href="#"><div class="vk"></div></a>
+      <a class="tw" href="#"></a>
+      <a class="ins" href="#"></a>
+      <a class="fb" href="#"></a>
+      <a class="vk" href="#"></a>
     </div>
     <div class="footer_links">
       <div class="bold"><div class="heart-icon"></div><a href="#">Для поставщиков</a></div>
