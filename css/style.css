@@ -312,3 +312,39 @@ h2 {
     height: 306px;
     float: right;
 }
+
+.footer-container {
+    background-color: burlywood;
+    min-width: 846px;
+    max-width: 1146px;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+
+.footer-container .social-networks {
+    background-color: gainsboro;
+    width: 186px;
+    height: 40px;
+    float: left;
+    /*margin-top: 36px;*/
+}
+
+.footer-container .footer_links {
+    background-color: gainsboro;
+    /*margin-top: 36px;*/
+    float: left;
+    /*width: 332px;*/
+    height: 40px;
+    margin-left: 211px;
+}
+
+.footer-container .made {
+    background-color: gainsboro;
+    width: 190px;
+    height: 60px;
+    float: right;
+}
+
+.footer-container .made p{
+    margin-top: 0;
+}
