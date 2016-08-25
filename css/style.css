@@ -20,3 +20,168 @@ h2 {
     font-weight: 200;
     font-family: serif;
 }
+
+/*1200x120*/
+/*900x120*/
+.header {
+    background-color: antiquewhite;
+    /*min-width: 900px;
+    max-width: 1200px;*/
+    /*min-width: 846px;*/
+    /*max-width: 1146px;*/
+    /*margin: 0 auto;*/
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+/*1200x77*/
+/*900x77*/
+.header .container {
+    background-color: burlywood;
+    min-width: 846px;
+    max-width: 1146px;
+    margin: 0 auto;
+    height: 77px;
+}
+
+.header .container .logo {
+    background-color: chocolate;
+    float: left;
+    width: 154px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: -6px;
+}
+
+.header .container .nav-item{
+    display: inline-block;
+}
+
+.header .container .navigation {
+    float: left;
+    background-color: chocolate;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 23px;
+    /*Временно*/
+    width: 350px;
+}
+
+.header .container .nav-list {
+    width: auto;
+    padding: 0;
+}
+
+.header .container .sub-menu {
+    display: none;
+}
+
+.header .container .search-box {
+    display: none;
+}
+
+.header .container .sing-in-box {
+    display: none;
+}
+
+/*.header .container .search {*/
+    /*background-color: chocolate;*/
+    /*width: 33px;*/
+    /*height: 34px;*/
+    /*float: right;*/
+    /*margin-top: 23px;*/
+    /*margin-right: 230px;*/
+/*}*/
+
+/*.header .container .sing-in {*/
+    /*background-color: chocolate;*/
+    /*width: 117px;*/
+    /*height: 34px;*/
+    /*float: right;*/
+    /*margin-top: 23px;*/
+/*}*/
+
+.header .container .cart {
+    background-color: chocolate;
+    width: 117px;
+    height: 34px;
+    float: right;
+    margin-top: 23px;
+}
+
+.header .contacts {
+    background-color: chocolate;
+    width: 166px;
+    height: 40px;
+    float: right;
+    margin-top: 21px;
+    margin-right: 27px;
+}
+/* Пока непонятно почему clearfix в таком виде не работает */
+
+/*.clearfix::after {*/
+    /*content: "";*/
+    /*display: table;*/
+    /*clear: both;*/
+/*}*/
+
+.clearfix {
+    clear: both;
+}
+
+.slider {
+    margin-top: -32px;
+    background-color: gainsboro;
+    height: 564px;
+    min-width: 846px;
+    max-width: 1146px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-content {
+    background-color: antiquewhite;
+    min-width: 846px;
+    max-width: 1146px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-content .stock {
+    background-color: chocolate;
+}
+
+.index-content .stock .wrap-frame {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+}
+
+.index-content .stock .wrap-frame:nth-child(1) {
+    padding-right: 10px;
+}
+
+.index-content .stock .wrap-frame:nth-child(2) {
+    padding-left: 10px;
+}
+
+/*560x230*/
+/*420x230*/
+.index-content .stock .frame {
+    background-color: burlywood;
+    height: 230px;
+    min-width: 420px;
+    /*max-width: 560px;*/
+    /*width: 560px;*/
+
+    /*box-sizing: border-box;*/
+}
+
+.index-content .stock .frame:nth-child(1) {
+    /*float: left;*/
+}
+
+.index-content .stock .frame:nth-child(2) {
+    /*float: left;*/
+    /*margin-left: 20px;*/
+}
