@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-size: 12px;
     line-height: 14px;
@@ -183,66 +187,35 @@ h2 {
 }
 
 .index-content .hits-block {
+    width: 100%;
     margin-top: 40px;
     background-color: burlywood;
     height: 325px;
+    display: inline-block;
 }
 
 .index-content .hits-block .product-item-wrap {
-    box-sizing: border-box;
-    width: 25%;
+    width: 23.2%;
     float: left;
-    padding-right: 19px;
-    margin-right: 6px;
+    margin-right: 2.40%;
 }
-
-.index-content .hits-block .product-item-wrap:nth-child(3n) {
-     box-sizing: border-box;
-     width: 25%;
-     float: left;
-     padding-right: 19px;
-     margin-right: 0;
- }
 
 .index-content .hits-block .product-item-wrap:nth-child(4n) {
-    box-sizing: border-box;
-    width: 25%;
-    float: right;
-    padding-right: 0;
-    padding-left: 19px;
-    margin-right: 0;
-    /*padding-right: 0;*/
-    /*padding-left: 19px;*/
-    /*margin-left: -24px;*/
-    /*margin-right: -10px;*/
-    display: none;
+    float: left;
+    margin-right: 0%;
+    font-size: 0;
 }
 
 .index-content .hits-block .product-item {
-    /*box-sizing: border-box;*/
-    /*width: 23.4%;*/
-    /*float: left;*/
-    /*margin-left: 0;*/
-    margin-right: 0;
-    /*padding-right: 100px;*/
-}
-
-/*.index-content .hits-block .product-item-wrap:nth-child(1) {*/
-    /*box-sizing: border-box;*/
-    /*width: 23.4%;*/
-    /*float: left;*/
-    /*margin-left: 0;*/
-/*}*/
-
-.index-content .hits-block .product-item {
+    font-size: 10px;
     background-color: chocolate;
     min-height: 325px;
 }
 
 .index-content .advertising {
-    margin-top: 36px;
+    margin-top: 34px;
     background-color: burlywood;
-    height: 246px;
+    height: 306px;
     padding: 30px 20px;
 }
 
@@ -250,17 +223,6 @@ h2 {
     background-color: chocolate;
     height: 55px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .index-content .other-info {
     margin-top: 40px;
@@ -295,7 +257,7 @@ h2 {
     background-color: antiquewhite;
     margin-right: auto;
     margin-left: auto;
-    min-height: 368px;
+    min-height: 430px;
     padding-top: 62px;
 }
 
