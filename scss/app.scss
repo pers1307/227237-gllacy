@@ -1,0 +1,500 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 12px;
+    line-height: 14px;
+    
+    /*В демо такие параметры*/
+    /*
+    font-size: 18px;
+    line-height: 1.2;
+    */
+    
+    
+    color: #FFFFFF;
+    font-weight: 100;
+    font-family: serif;
+/*    background-color: #849d8f;*/
+    
+    background-color: #849d8f;
+    background-image: url("../img/tmp/two-icecream-slider-1.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+    transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+body > input[type="radio"] {
+  display: none;
+}
+
+h1 {
+    font-size: 21px;
+    color: #FFFFFF;
+    font-weight: 100;
+    font-family: serif;
+}
+
+h2 {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-family: serif;
+}
+
+/*1200x120*/
+/*900x120*/
+.header {
+    margin-top: 0;
+    background-color: antiquewhite;
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+/*1200x77*/
+/*900x77*/
+.header .container {
+    background-color: burlywood;
+    min-width: 846px;
+    max-width: 1146px;
+    margin: 0 auto;
+    height: 77px;
+}
+
+.header .container-contacts {
+    background-color: burlywood;
+    min-width: 846px;
+    max-width: 1146px;
+    margin: 0 auto;
+    height: 77px;
+}
+
+.header .container .logo {
+    float: left;
+    width: 154px;
+    height: 64px;
+    margin-top: 10px;
+    margin-left: -6px;
+}
+
+.header .container .nav-item {
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    margin-right: 24px;
+}
+
+.header .container .nav-item .nav-link {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+
+.header .container .navigation {
+    float: left;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 34px;
+}
+
+.header .container .nav-list {
+    width: auto;
+    padding: 0;
+}
+
+.header .container .sub-menu {
+    display: none;
+}
+
+.header .container .search-box {
+    display: none;
+}
+
+.header .container .sing-in-box {
+    display: none;
+}
+
+/*.header .container .search {*/
+    /*background-color: chocolate;*/
+    /*width: 33px;*/
+    /*height: 34px;*/
+    /*float: right;*/
+    /*margin-top: 23px;*/
+    /*margin-right: 230px;*/
+/*}*/
+
+/*.header .container .sing-in {*/
+    /*background-color: chocolate;*/
+    /*width: 117px;*/
+    /*height: 34px;*/
+    /*float: right;*/
+    /*margin-top: 23px;*/
+/*}*/
+
+/*
+.header .container .cart {
+    background-color: chocolate;
+    width: 117px;
+    height: 34px;
+    float: right;
+    margin-top: 23px;
+}
+*/
+
+.header .container .nav-left {
+    margin-top: 24px;
+    background-color: chocolate;
+    float: right;
+    /* Временно */
+    height: 32px;
+    width: 261px;
+}
+
+.header .container .nav-left > div {
+    display: inline-block;
+    background-color: gainsboro;
+    vertical-align: top; 
+    border-radius: 20px;
+}
+
+.header .container .nav-left .search {
+    height: 32px;
+    width: 32px;
+    margin-right: 8px;
+}
+
+.header .container .nav-left .sing-in {
+    height: 32px;
+    width: 92px;
+    margin-right: 6px;
+}
+
+.header .container .nav-left .cart {
+    height: 32px;
+    width: 117px;
+}
+
+.header .contacts {
+    background-color: chocolate;
+    width: 166px;
+    height: 40px;
+    float: right;
+    margin-top: 21px;
+}
+/* Пока непонятно почему clearfix в таком виде не работает */
+
+/*.clearfix::after {*/
+    /*content: "";*/
+    /*display: table;*/
+    /*clear: both;*/
+/*}*/
+
+.clearfix {
+    clear: both;
+}
+
+.center-fix {
+    background-color: floralwhite;
+    margin-left: 27px;
+    margin-right: 27px;
+}
+
+.slider {
+/*
+    margin-top: -83px;
+    background-color: gainsboro;
+    height: 564px;
+    min-width: 846px;
+    max-width: 1146px;
+    margin-left: auto;
+    margin-right: auto;
+*/
+    
+    position: relative;
+
+  padding-top: 270px;
+
+  text-align: center;
+  color: #ffffff;
+    
+    
+    
+}
+
+.slide {
+  display: none;
+}
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-weight: 800;
+  font-size: 60px;
+}
+
+.slide-btn {
+  display: inline-block;
+  padding: 12px 50px;
+
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.slide-btn:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slide-btn:active {
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#btn-1:checked ~ body {
+  background-color: #849d8f;
+  background-image: url("../img/tmp/two-icecream-slider-1.png");
+}
+
+#btn-2:checked ~ body {
+  background-color: #8996a6;
+  background-image: url("../img/tmp/two-icecream-slider-2.png");
+}
+
+#btn-3:checked ~ body {
+  background-color: #9d8b84;
+  background-image: url("../img/tmp/two-icecream-slider-3.png");
+}
+
+
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+  background-color: #ffffff;
+}
+
+.index-content {
+    background-color: antiquewhite;
+    min-width: 846px;
+    max-width: 1146px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-content .stock {
+    background-color: chocolate;
+}
+
+.index-content .stock .wrap-frame {
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+}
+
+.index-content .stock .wrap-frame:nth-child(1) {
+    padding-right: 12px;
+}
+
+.index-content .stock .wrap-frame:nth-child(2) {
+    padding-left: 12px;
+}
+
+/*560x230*/
+/*420x230*/
+.index-content .stock .frame {
+    background-color: burlywood;
+    height: 230px;
+    min-width: 420px;
+    border-radius: 15px;
+    padding: 30px 18px;
+}
+
+.index-content .stock .frame .title {
+    font-size: 33px;
+    font-weight: 600;
+/*    letter-spacing: 1px;*/
+}
+
+.index-content .stock .frame p {
+    
+}
+
+.index-content .hits-block {
+    width: 100%;
+    margin-top: 40px;
+    background-color: burlywood;
+    height: 325px;
+    display: inline-block;
+}
+
+.index-content .hits-block .product-item-wrap {
+    width: 23.2%;
+    float: left;
+    margin-right: 2.40%;
+}
+
+.index-content .hits-block .product-item-wrap:nth-child(4n) {
+    float: left;
+    margin-right: 0%;
+    font-size: 0;
+}
+
+.index-content .hits-block .product-item {
+    font-size: 10px;
+    background-color: chocolate;
+    min-height: 325px;
+}
+
+.index-content .hits-block .product-item .image{
+    border-radius: 140px;
+    background-size: cover;
+}
+
+.index-content .hits-block .product-item .hit {
+    position: absolute;
+    background: url('../img/hit.jpg') no-repeat 50% 50%;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.index-content .advertising {
+    background: url('../img/wafer.jpg');
+    margin-top: 34px;
+    height: 306px;
+    padding: 30px 20px;
+    border-radius: 15px;
+}
+
+.index-content .title {
+    background-color: chocolate;
+}
+
+.index-content .other-info {
+    margin-top: 40px;
+    padding: 0;
+    height: 222px;
+}
+
+.index-content .other-info .wrap-frame {
+    margin-top: 0;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+}
+
+.index-content .other-info .frame {
+    margin-top: -12px;
+    background-color: gainsboro;
+    height: 222px;
+    border-radius: 20px;
+}
+
+.index-content .other-info .mail {
+    background: url('../img/mail-fon.jpg');
+    margin-top: -16px;
+}
+
+.index-content .other-info .mail .substrate {
+    position: relative;
+    top: 6px;
+    background-color: chocolate;
+    margin: auto;
+    width: 98%;
+    min-height: 210px;
+    border-radius: 15px;
+    
+}
+
+.index-content .other-info .substrate p {
+    position: relative;
+    top: 28px;
+    line-height: 1.4;
+    color: black;
+    width: 92%;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-content .other-info .wrap-frame:nth-child(1) {
+    padding-right: 12px;
+}
+
+.index-content .other-info .wrap-frame:nth-child(2) {
+    padding-left: 12px;
+}
+
+.map {
+    margin-top: 38px;
+    background-color: antiquewhite;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 430px;
+    padding-top: 62px;
+}
+
+.map-description-container {
+    background-color: burlywood;
+    min-width: 846px;
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+.map-description {
+    background-color: chocolate;
+    width: 302px;
+    height: 306px;
+    float: right;
+}

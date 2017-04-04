@@ -1,0 +1,59 @@
+.footer-container {
+    background-color: burlywood;
+    min-width: 846px;
+    max-width: 1146px;
+    margin: 0 auto;
+    padding-top: 36px;
+    
+    .social-networks {
+        background-color: gainsboro;
+        width: 186px;
+        height: 40px;
+        float: left;
+        /*margin-top: 36px;*/
+        
+        div {
+            width: 35px;
+            height: 35px;
+            display: inline-block;
+        }
+        
+        .tw {
+                background: url('../img/tw.png') no-repeat 50% 50%;
+                background-size: cover;  
+            }
+            
+            .ins {
+                background: url('../img/ins.png') no-repeat 50% 50%;
+                background-size: cover;  
+            }
+            
+            .fb {
+                background: url('../img/fb.png') no-repeat 50% 50%;
+                background-size: cover;  
+            }
+            
+            .vk {
+                background: url('../img/vk.png') no-repeat 50% 50%;
+                background-size: cover;  
+            }
+    }
+    
+    .footer_links {
+        background-color: gainsboro;
+        float: left;
+        height: 40px;
+        margin-left: 211px;
+    }
+    
+    .footer-container .made {
+        background-color: gainsboro;
+        width: 190px;
+        height: 60px;
+        float: right;
+    }
+
+    .made p{
+        margin-top: 0;
+    }
+}
